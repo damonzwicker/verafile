@@ -5,7 +5,7 @@ A file is either the same—or it isn’t.
 Verify that. Independently.
 
 ```bash
-npx verafile verify file.pdf proof.json
+npx verafile verify example.txt example.proof.json
 ```
 
 No APIs. No systems. No interpretation.
