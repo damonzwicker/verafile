@@ -1,12 +1,12 @@
 # VeraFile
 
-A file is either the same—or it isn’t.
-
-Verify that. Independently.
-
 ```bash
 npx verafile verify example.txt example.proof.json
 ```
+
+A file is either the same—or it isn’t.
+
+Verify that. Independently.
 
 No APIs. No systems. No interpretation.
 
@@ -14,11 +14,23 @@ If one byte changes, verification fails.
 
 ---
 
-## Try to break it
+## Run it
 
 ```bash
+git clone https://github.com/damonzwicker/verafile
+cd verafile
 npx verafile verify example.txt example.proof.json
 ```
+
+Expected:
+
+```txt
+VALID
+```
+
+---
+
+## Try to break it
 
 Now change the file:
 
@@ -27,11 +39,15 @@ echo change >> example.txt
 npx verafile verify example.txt example.proof.json
 ```
 
-It should fail.
+Expected:
+
+```txt
+INVALID
+```
 
 ---
 
-## Example
+## Create your own proof
 
 ```bash
 echo data > test.txt
