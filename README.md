@@ -14,6 +14,23 @@ If one byte changes, verification fails.
 
 ---
 
+## Try to break it
+
+```bash
+npx verafile verify example.txt example.proof.json
+```
+
+Now change the file:
+
+```bash
+echo change >> example.txt
+npx verafile verify example.txt example.proof.json
+```
+
+It should fail.
+
+---
+
 ## Example
 
 ```bash
