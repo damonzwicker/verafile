@@ -1,9 +1,12 @@
 node_modules/
+
 test.mjs
 
+# Ignore compiled artifacts in src
 src/*.js
 src/*.js.map
 src/*.d.ts
 src/*.d.ts.map
 
+# macOS
 .DS_Store
