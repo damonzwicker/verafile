@@ -1,7 +1,13 @@
 # VeraFile
 
+Run this (copy/paste):
+
 ```bash
 npx verafile verify example.txt example.proof.json
+```
+
+```txt
+VALID
 ```
 
 A file is either the same—or it isn’t.
@@ -14,32 +20,12 @@ If one byte changes, verification fails.
 
 ---
 
-## Run it
-
-```bash
-git clone https://github.com/damonzwicker/verafile
-cd verafile
-npx verafile verify example.txt example.proof.json
-```
-
-Expected:
-
-```txt
-VALID
-```
-
----
-
 ## Try to break it
-
-Now change the file:
 
 ```bash
 echo change >> example.txt
 npx verafile verify example.txt example.proof.json
 ```
-
-Expected:
 
 ```txt
 INVALID
