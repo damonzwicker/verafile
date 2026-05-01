@@ -1,6 +1,6 @@
 {
   "name": "verafile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Verify files from portable proof artifacts.",
   "main": "dist/index.js",
   "bin": {
