@@ -1,0 +1,25 @@
+{
+  "name": "verafile",
+  "version": "1.0.0",
+  "description": "Verify files from portable proof artifacts.",
+  "main": "dist/verify.js",
+  "bin": {
+    "verafile": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "verification",
+    "proof",
+    "file",
+    "ocp"
+  ],
+  "author": "Damon Zwicker",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.12.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}
