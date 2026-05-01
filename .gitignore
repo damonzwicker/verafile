@@ -1,0 +1,9 @@
+node_modules/
+test.mjs
+
+src/*.js
+src/*.js.map
+src/*.d.ts
+src/*.d.ts.map
+
+.DS_Store
